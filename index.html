@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*const PI = 3.1415926;
+        let radius = prompt('輸入半徑:')
+        console.log(radius + 10);
+        let area = radius ** 2 * PI;
+        console.log(typeof (radius), area)*/
+    </script>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+    <script>
+        /*email = 'jerry@gmail.com';
+        for (let i = 0; i < email.length; i++) {
+            console.log(email[i])
+        }
+        console.log(email[email.length - 1]);
+        console.log(email.toUpperCase());
+        console.log('A' > 'a');  //ascii 10進制 65>97 false
+        console.log('25' == 25);  // 值一致
+        console.log('25' === 25);  // 值跟型態一致  */
+        /*x = 20
+        y = 30
+        z = 10
+        if (x > y && x > z) {
+            console.log(1)
+        }
+        if (x > y || x > z) {
+            console.log(2)
+        }
+        if (!(x > y) && x > z) {
+            console.log(3)
+        }*/
+        /*console.log(Math);
+        console.log(Math.random());  //0~0.9999...
+        console.log(Math.random() * 10);  //0~9.99999...
+        console.log(Math.floor(Math.random() * 10));  //0~9
+        console.log(Math.floor(Math.random() * 10) + 1);  //1~10
+        while (true) {
+            let number = Math.floor(Math.random() * (100 - 10 + 1)) + 10;
+            console.log(number);
+            if (number == 100) {
+                break;
+            }
+        }*/
+        const start = 1;
+        const end = 49;
+
+        for (let i = 0; i < 10; i++) {
+            console.log(`第${i + 1}次開獎:`);
+            let lotto_str = '';
+            for (let i = 0; i < 6; i++) {
+                let number = Math.floor(Math.random() * (end - start + 1)) + start;
+                let lotto = `第${i + 1}個號碼:${number}`;
+                console.log(lotto)
+                document.write(`<h2>第${i + 1}個號碼:${number}</h2>`)
+                lotto_str += number + ' ';
+
+            } console.log(lotto_str);
+        }
+    </script>
+</body>
+
+</html>
